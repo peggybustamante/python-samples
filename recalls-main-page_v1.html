@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Recalls main page</title>
+	
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="css/recalls-main.css" rel="stylesheet" type="text/css">
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/recalls-main.js"></script>
+
+</head>
+<body>
+
+<!-- RECALLS MAIN PAGE Content -->
+
+<div id="recalls-main-container">
+ 	<div>
+		<h4 class="topic-header small">Recent recalls</h4>
+	</div>
+
+<!-- FOOD -->	
+	<div class="subwidget promo"> 
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42272/bestdiets-plant-based-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Food</a></h4>
+			<div id="main-food">
+			</div>
+			<p class="more">
+				<a href="#foodModal" role="button" class="btn" data-toggle="modal">See more food recalls</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Food Modal -->
+	<div id="foodModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Food recalls</h3>
+	  </div>
+	  <div id="foodMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+
+ <!-- DRUG -->
+	<div class="subwidget promo"> 
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Drug</a></h4>
+			<div id="main-drug">
+			</div>
+			<p class="more">
+				<a href="#drugModal" role="button" class="btn" data-toggle="modal">See more drug recalls</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Drug Modal -->
+	<div id="drugModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Drug recalls</h3>
+	  </div>
+	  <div id="drugMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+	
+<!-- TOY -->
+	<div class="subwidget promo">  
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Toy</a></h4>
+			<div id="main-toy">
+			</div>
+			<p class="more">
+				<a href="#toyModal" role="button" class="btn" data-toggle="modal">See more toy recalls</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Toy Modal -->
+	<div id="toyModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Toy recalls</h3>
+	  </div>
+	  <div id="toyMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+
+<!-- BICYCLES -->
+	<div class="subwidget promo">  
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Bicycle</a></h4>
+			<div id="main-bicycle">
+			</div>
+			<p class="more">
+				<a href="#bicycleModal" role="button" class="btn" data-toggle="modal">See more bicycle recalls</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Bicycles Modal -->
+	<div id="bicycleModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Bicycle recalls</h3>
+	  </div>
+	  <div id="bicycleMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+
+
+<!-- CLOTHING -->
+	<div class="subwidget promo">  
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Clothing</a></h4>
+			<div id="main-clothing">
+			</div>
+			<p class="more">
+				<a href="#clothingModal" role="button" class="btn" data-toggle="modal">See more clothing recalls</a>
+			</p>
+		</div>
+	</div>
+	
+	<!-- Clothing Modal -->
+	<div id="clothingModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Clothing recalls</h3>
+	  </div>
+	  <div id="clothingMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+
+<!-- CHAIR -->
+	<div class="subwidget promo">  
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Chair</a></h4>
+			<div id="main-chair">
+			</div>
+			<p class="more">
+				<a href="#chairModal" role="button" class="btn" data-toggle="modal">See more chair recalls</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Chair Modal -->
+	<div id="chairModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Chair recalls</h3>
+	  </div>
+	  <div id="chairMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+<!-- LIGHT -->
+	<div class="subwidget promo">  
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Light</a></h4>
+			<div id="main-light">
+			</div>
+			<p class="more">
+				<a href="#lightModal" role="button" class="btn" data-toggle="modal">See more light recalls</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Light Modal -->
+	<div id="lightModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Light recalls</h3>
+	  </div>
+	  <div id="lightMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+
+ <!-- VEHICLE -->
+ 	<div class="subwidget promo"> 
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Vehicle</a></h4>
+			<div id="main-vehicle">
+			</div>
+			<p class="more">
+				<a href="#vehicleModal" role="button" class="btn" data-toggle="modal">See more vehicle recalls</a>
+			</p>
+		</div>
+	</div>
+	
+	<!-- Vehicle Modal -->
+	<div id="vehicleModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Vehicle recalls</h3>
+	  </div>
+	  <div id="vehicleMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+
+<!-- STROLLER -->
+	<div class="subwidget promo">  
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Stroller</a></h4>
+			<div id="main-stroller">
+			</div>
+			<p class="more">
+				<a href="#strollerModal" role="button" class="btn" data-toggle="modal">See more stroller recalls</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Stroller Modal -->
+	<div id="strollerModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Stroller recalls</h3>
+	  </div>
+	  <div id="strollerMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+
+<!-- FURNITURE -->
+	<div class="subwidget promo">  
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Furniture</a></h4>
+			<div id="main-furniture">
+			</div>
+			<p class="more">
+				<a href="#furnitureModal" role="button" class="btn" data-toggle="modal">See more furniture recalls</a>
+			</p>
+		</div>
+	</div>
+	
+	<!-- Furniture Modal -->
+	<div id="furnitureModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Furniture recalls</h3>
+	  </div>
+	  <div id="furnitureMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+<!-- BATTERY -->
+	<div class="subwidget promo">  
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Battery</a></h4>
+			<div id="main-battery">
+			</div>
+			<p class="more">
+				<a href="#batteryModal" role="button" class="btn" data-toggle="modal">See more battery recalls</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Battery Modal -->
+	<div id="batteryModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Battery recalls</h3>
+	  </div>
+	  <div id="batteryMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+<!-- ELECTRONICS -->
+	<div class="subwidget promo">  
+		<div class="widget-image" style="width:105px">
+			<img src="http://health.usnews.com/pubdbimages/image/42267/bestdiets-diabetes-2012105x105.png" alt="" title="">
+		</div>
+		<div class="recall-content">
+			<h4><a href="#">Electronics</a></h4>
+			<div id="main-electronics">
+			</div>
+			<p class="more">
+				<a href="#electronicsModal" role="button" class="btn" data-toggle="modal">See more electronics recalls</a>
+			</p>
+		</div>
+	</div>
+
+	<!-- Electronics Modal -->
+	<div id="electronicsModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">Electronics recalls</h3>
+	  </div>
+	  <div id="electronicsMcontent" class="modal-body">
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+
+</div>
+
+</body>
+</html> 

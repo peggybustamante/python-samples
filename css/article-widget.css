@@ -1,0 +1,130 @@
+/****************************************************************
+file: article-widget.css
+project: Health Recalls
+date: May 2013
+author: P. Bustamante
+****************************************************************/
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 22.652px;
+	color: #333333;
+}
+
+#article-widget-container { width: 307px;  /*border: 1px solid #999;*/ margin: 20px;}
+
+h4, h5 {
+	color: #39547a;
+	font-family: "Oxygen", "Trebuchet MS", "Merriweather", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	margin: 0 0 11.326px;
+}
+
+h5 {
+	font-size: 14px;
+	display: block;
+	-webkit-margin-before: .67em;
+	-webkit-margin-after: .01em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+
+h4 {
+	font-size: 18px;
+	/*margin-top: 0;*/
+	/*line-height: 1;*/
+	display: block;
+	-webkit-margin-before: 1.33em;
+	-webkit-margin-after: .73em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	font-weight: bold;
+}
+
+h3 {
+	font-family: "Merriweather", Georgia, "Times New Roman", Times, serif;
+	font-size: 16px;
+	line-height: 1.3;
+	margin-bottom: 5.663px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+p {
+	margin: 0 0 11.326px 10px;
+	display: block;
+	-webkit-margin-before: .1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+	line-height: 19.652px;
+}
+
+a {
+  color: #5278ae;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-transition: 0.1s ease-out;
+  -moz-transition: 0.1s ease-out;
+  -o-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+a:hover {
+  color: #39547a;
+  text-decoration: underline;
+}
+
+.inset-widget {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.inset-widget p {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 13px;
+}
+
+.well {
+	min-height: 20px;
+	padding: 19px;
+	margin-bottom: 20px;
+	background-color: #f5f5f5;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.page-header {
+	margin: 11.326px 0;
+	border-bottom: 1px solid #c9c9c9;
+}
+
+
+/* from home-widget.css */
+
+.topic-header.small {
+	font-size: 18px;
+	margin-bottom: 22.652px;
+	padding: 5.663px 0;
+}
+
+.topic-header {
+	font-size: 36px;
+	line-height: 1.5;
+	margin: 0;
+	border-top: 4px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+
+.excerpt {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	margin: 5px 0 10px 0;
+}
+
+.dateStamp { font: 11px Arial !important; color: #999; margin: 5px 0 5px 0; }
+
+.indivCon { border-bottom: 1px #CCC dotted; }

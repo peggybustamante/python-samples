@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Recalls main page</title>
+	
+	<link href="css/reset.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link href="css/recalls-main.css" rel="stylesheet" type="text/css">
+	
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script src="js/moment.js"></script>
+	<script src="js/recalls-main.js"></script>
+
+</head>
+<body>
+
+<!-- RECALLS MAIN PAGE Content -->
+
+<div id="recalls-main-container">
+ 	<div>
+		<h4 class="topic-header small">Recent recalls</h4>
+	</div>
+
+<!-- FOOD -->
+		<div class="accordion-group accordion-heading fda-showmethemodal">
+		  <a href="#recallModal" class="accordion-toggle" data-recall="food_recalls" data-parent="#recall-accordion" data-toggle="modal">
+			<img src="img/food.png" /><span class="sectHead">Food</span>
+		  </a>
+		</div>
+
+<!-- DRUGS -->
+		<div class="accordion-group accordion-heading fda-showmethemodal">
+		  <a  href="#recallModal" class="accordion-toggle" data-recall="drug_recalls" data-parent="#recall-accordion" data-toggle="modal">
+			<img src="img/drugs.png" /><span class="sectHead">Drugs</span>
+		  </a>
+		</div>
+
+
+
+<!-- Recall top categories -->
+
+	<div class="accordion" id="recall-accordion">
+
+	  <div class="accordion-group">
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#recall-accordion" href="#collapseOne">
+			<img src="img/pacifier.png" /><span class="sectHead">Child-related Products</span>
+		  </a>
+		</div>
+		<!--div id="collapseOne" class="accordion-body collapse in"-->
+		<div id="collapseOne" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<!-- List of subcategories (product types) here -->
+
+			<table id="child-related" class="subcat">
+				<tr><td>
+					<p class="more showmethemodal">
+						<a href="#recallModal" role="button" class="subcat" data-recall="Pacifiers+Accessories" data-toggle="modal">Pacifiers & Accessories</a>
+					</p>
+				</td>
+				<td>
+					<p class="more showmethemodal">
+						<a href="#recallModal" role="button" class="subcat" data-recall="Sippy+Tumbler+Cups" data-toggle="modal">Sippy/Tumbler Cups</a>
+					</p>
+				</td></tr>
+				<tr><td>
+					<p class="more showmethemodal">
+						<a href="#recallModal" role="button" class="subcat" data-recall="Baby+Seats+Non-Bath" data-toggle="modal">Baby Seats (Non-Bath)</a>
+					</p>
+				</td>
+				<td>
+					<p class="more showmethemodal">
+						<a href="#recallModal" role="button" class="subcat" data-recall="Infant+Carriers+Slings" data-toggle="modal">Infant Carriers/Slings/Backpacks/Car Seats</a>
+					</p>
+				</td></tr>
+				<tr><td>
+					<p class="more showmethemodal">
+						<a href="#recallModal" role="button" class="subcat" data-recall="Booster+Seats" data-toggle="modal">Booster Seats</a>
+					</p>
+				</td>
+				<td>
+					<p class="more showmethemodal">
+						<a href="#recallModal" role="button" class="subcat" data-recall="High+Chairs+Booster+Chairs" data-toggle="modal">High Chairs/Booster Chairs</a>
+					</p>
+				</td></tr>
+			</table>
+			
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="accordion-group">
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#recall-accordion" href="#collapseTwo">
+			<img src="img/household.png" /><span class="sectHead">Household</span>
+		  </a>
+		</div>
+		<div id="collapseTwo" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<!-- List of subcategories (product types) here -->
+			<table id="household" class="subcat"></table>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="accordion-group">
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#recall-accordion" href="#collapseThree">
+			<img src="img/toaster.png" /><span class="sectHead">Kitchen</span>
+		  </a>
+		</div>
+		<div id="collapseThree" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<!-- List of subcategories (product types) here -->
+			<table id="kitchen" class="subcat"></table>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="accordion-group">
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#recall-accordion" href="#collapseFour">
+			<img src="img/elec.png" /><span class="sectHead">Electronics & Appliances</span>
+		  </a>
+		</div>
+		<div id="collapseFour" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<!-- List of subcategories (product types) here -->
+			<table id="electronics" class="subcat"></table>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="accordion-group">
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#recall-accordion" href="#collapseFive">
+			<img src="img/drill.png" /><span class="sectHead">Home Improvement & Garden</span>
+		  </a>
+		</div>
+		<div id="collapseFive" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<!-- List of subcategories (product types) here -->
+			<table id="home-improv" class="subcat"></table>
+		  </div>
+		</div>
+	  </div>
+
+	  <div class="accordion-group">
+		<div class="accordion-heading">
+		  <a class="accordion-toggle" data-toggle="collapse" data-parent="#recall-accordion" href="#collapseSix">
+			<img src="img/fitness.png" /><span class="sectHead">Fitness & Recreation</span>
+		  </a>
+		</div>
+		<div id="collapseSix" class="accordion-body collapse">
+		  <div class="accordion-inner">
+			<!-- List of subcategories (product types) here -->
+			<table id="fitness" class="subcat"></table>
+		  </div>
+		</div>
+	  </div>
+
+	</div>
+
+<!-- Recall Modal template-->
+	<div id="recallModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+		<h3 id="myModalLabel">X recalls</h3>
+	  </div>
+	  <div id="recallMcontent" class="modal-body">
+		
+			<!-- dynamically generated modal content here -->
+
+	  </div>
+	  <div class="modal-footer">
+		<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+	  </div>
+	</div>
+<!-- Recall Modal template end -->
+
+
+
+</div>
+
+<script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-37303540-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+
+</body>
+</html> 
